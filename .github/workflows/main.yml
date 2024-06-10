@@ -91,7 +91,7 @@ jobs:
       - name: Test frontend
         run: |
           cd frontend/
-          npm run tests
+          npm run test
           
   build_frontend_and_push_to_docker_hub:
     name: Push frontend Docker image to dockerhub
