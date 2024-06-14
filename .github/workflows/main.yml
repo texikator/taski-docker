@@ -13,9 +13,9 @@ jobs:
         image: postgres:13.10
         
         env:
-          POSTGRES_USER: django_user
-          POSTGRES_PASSWORD: "%secretpassword#18"
-          POSTGRES_DB: django
+          POSTGRES_USER: ${{secrets.POSTGRES_USER}}
+          POSTGRES_PASSWORD: ${{secrets.POSTGRES_PASSWORD}}
+          POSTGRES_DB: ${{secrets.POSTGRES_DB}}
         ports:
           - 5432:5432
     
